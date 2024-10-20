@@ -91,7 +91,7 @@ class TextSearchApp(QMainWindow):
         self.info_label = QLabel(self)
         self.info_label.setText("ℹ️")  # 使用 i 图标
         self.info_label.setStyleSheet("font-size: 24px; cursor: pointer;")
-        self.info_label.setToolTip("点击查看软件协议信息")
+        self.info_label.setToolTip("本软件遵循 CC BY-NC 2.0 许可证")
         self.info_label.move(self.width() - 30, 10)  # 右上角对齐
         self.info_label.mousePressEvent = self.show_license_info
 
@@ -151,7 +151,7 @@ class TextSearchApp(QMainWindow):
         dialog_layout.addWidget(icon_container)
 
         # 添加协议说明的 QLabel
-        license_label = QLabel("本软件遵循 CC BY-NC 2.0 协议，由 OB_BUFF 制作。")
+        license_label = QLabel("本软件遵循 CC BY-NC 2.0 许可证，由 OB_BUFF 制作。")
         license_label.setWordWrap(True)  # 如果内容较长，可以换行显示
         dialog_layout.addWidget(license_label)
 
